@@ -1,0 +1,27 @@
+public class  Main {
+    public static void main(String[] args) {
+        
+        Orca orca = new Orca("Lobo Marino", 1, "Carnívoro", "Agua_Salada", 5500.0, "Mamífero", "Grupo_Acuático");
+        Tetra tetra = new Tetra("Tetra León", 5, "Carnívoro", "Agua_Dulce", 5.0, "Peces", "Rio");
+        León leon = new León("Mufasa", 10, "Carnívoro", "Aire", 190.0, "Felino", "Sabana"); 
+        Oso_Bezudo osoBezudo = new Oso_Bezudo("Oso indio", 3, "Omnívoro", "Aire", 7.0, "Mamífero", "Bosque");
+        
+        orca.Emitir_Sonido();
+        orca.Moverse();
+        orca.Come_Carne();
+        
+        tetra.Comer();
+        tetra.Caza();
+        tetra.Come_Carne();
+        
+        leon.Emitir_Sonido();
+        leon.Cazar();
+        leon.Come_Carne();
+        
+        osoBezudo.Dormir();
+        osoBezudo.Moverse();
+        osoBezudo.Come_Plantas();
+    }
+}
+
+
