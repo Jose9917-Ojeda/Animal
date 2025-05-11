@@ -1,0 +1,23 @@
+public class Orca extends Acuático implements Carnivoro {
+
+    public Orca(String Nombre, int Edad, String Tipo_de_Alimentación, String Respiración, 
+             double Peso, String Tipo_de_Animal, String Grupo) {
+        super(Nombre, Edad, Tipo_de_Alimentación, Respiración, Peso, Tipo_de_Animal, Grupo);
+    }
+
+    @Override
+    public void Emitir_Sonido() {
+        System.out.println(Nombre + " Emite un sonido para comunicarse con el grupo.");
+    }
+
+    @Override
+    public void Moverse() {
+        System.out.println(Nombre + " Nada en manada.");
+    }
+
+    @Override
+    public void Come_Carne() {
+        System.out.println(Nombre + " Se come a los Pinguinos.");
+    }
+}
+
