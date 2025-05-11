@@ -1,0 +1,32 @@
+public abstract class Animal {
+    protected String Nombre;
+    protected int Edad;
+    protected String Tipo_de_Alimentación;
+    protected String Respiración;
+    protected double Peso;
+    protected String Tipo_de_Animal;
+
+    public Animal (String Nombre, int Edad, String Tipo_de_Alimentación,
+                  String Respiración, double peso, String Tipo_de_Animal) {
+        this.Nombre = Nombre;
+        this.Edad = Edad;
+        this.Tipo_de_Alimentación = Tipo_de_Alimentación;
+        this.Respiración = Respiración;
+        this.Peso = peso;
+        this.Tipo_de_Animal = Tipo_de_Animal;
+    }
+
+    public void Comer() {
+        System.out.println(Nombre + " Está comiendo.");
+    }
+
+    public void Dormir() {
+        System.out.println(Nombre + " Está durmiendo.");
+    }
+
+    public void Emitir_Sonido() {
+        System.out.println(Nombre + " Emite un sonido.");
+    }
+
+    public abstract void Moverse();
+}
