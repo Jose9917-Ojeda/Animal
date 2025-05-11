@@ -1,0 +1,22 @@
+public class Oso_Bezudo extends Terrestre implements Herbivoro {
+
+    public Oso_Bezudo(String Nombre, int Edad, String Tipo_de_Alimentación,
+            String Respiración, double Peso, String Tipo_de_Animal, String Habitat) {
+        super(Nombre, Edad, Tipo_de_Alimentación, Respiración, Peso, Tipo_de_Animal, Habitat);
+    }
+
+    @Override
+    public void Dormir() {
+        System.out.println(Nombre + " Duerme durante el día.");
+    }
+
+    @Override
+    public void Moverse() {
+        System.out.println(Nombre + " Trepa árboles.");
+    }
+
+    @Override
+    public void Come_Plantas() {
+        System.out.println(Nombre + " Come hojas");
+    }
+}
