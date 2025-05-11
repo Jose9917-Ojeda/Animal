@@ -1,0 +1,23 @@
+public class Acuático extends Animal {
+    protected String Grupo;
+
+    public Acuático(String Nombre, int Edad, String Tipo_de_Alimentación, 
+            String Respiración, double Peso, String Tipo_de_Animal, String Grupo) {
+        super (Nombre, Edad, Tipo_de_Alimentación, Respiración, Peso, Tipo_de_Animal);
+        this.Grupo = Grupo;
+    }
+
+    public void Caza() {
+        System.out.println(Nombre + " Está cazando en " + Grupo);
+    }
+
+    @Override
+    public void Emitir_Sonido() {
+        System.out.println(Nombre + " Emite un sonido para comunicarse con el grupo.");
+    }
+
+    @Override
+    public void Moverse() {
+        System.out.println(Nombre + " Nada.");
+    }
+}
