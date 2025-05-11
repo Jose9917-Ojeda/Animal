@@ -1,0 +1,3 @@
+public interface Carnivoro {
+    void Come_Carne();
+}
