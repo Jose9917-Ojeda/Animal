@@ -1,0 +1,22 @@
+public class León extends Terrestre implements Carnivoro {
+
+    public León(String Nombre, int Edad, String Tipo_de_Alimentación,
+            String Respiración, double Peso, String Tipo_de_Animal, String Habitat) {
+        super(Nombre, Edad, Tipo_de_Alimentación, Respiración, Peso, Tipo_de_Animal, Habitat);
+    }
+
+    @Override
+    public void Emitir_Sonido() {
+        System.out.println(Nombre + " Ruge.");
+    }
+
+    @Override
+    public void Moverse() {
+        System.out.println(Nombre + " Se esconde para cazar.");
+    }
+
+    @Override
+    public void Come_Carne() {
+        System.out.println(Nombre + " Come Cebra");
+    }
+}
