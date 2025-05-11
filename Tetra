@@ -1,0 +1,17 @@
+public class Tetra extends Acuático implements Carnivoro {
+
+    public Tetra(String Nombre, int Edad, String Tipo_de_Alimentación, String Respiración, 
+                 double Peso, String Tipo_de_Animal, String Grupo) {
+        super(Nombre, Edad, Tipo_de_Alimentación, Respiración, Peso, Tipo_de_Animal, Grupo);
+    }
+
+    @Override
+    public void Moverse() {
+        System.out.println(Nombre + " Nada rápidamente.");
+    }
+
+    @Override
+    public void Come_Carne() {
+        System.out.println(Nombre + " Se alimenta de microorganismos.");
+    }
+}
